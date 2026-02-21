@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #111;
+  color: #fff;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('https://images.unsplash.com/photo-1581092335397-9583eb92d232') no-repeat center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: yellow;
+  cursor: pointer;
+}
+
+/* SERVICES */
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* CONTACT */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+.contact input,
+.contact textarea {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background: yellow;
+  border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+}
